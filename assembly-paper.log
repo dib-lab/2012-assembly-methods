@@ -1,0 +1,527 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 SEP 2012 14:34
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**assembly-paper.tex
+(./assembly-paper.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen113
+\extrarowheight=\dimen114
+\NC@list=\toks16
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip45
+\f@ncyO@elh=\skip46
+\f@ncyO@erh=\skip47
+\f@ncyO@olh=\skip48
+\f@ncyO@orh=\skip49
+\f@ncyO@elf=\skip50
+\f@ncyO@erf=\skip51
+\f@ncyO@olf=\skip52
+\f@ncyO@orf=\skip53
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/latin9.def
+File: latin9.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/english.ldf
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count91
+\U@D=\dimen115
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(./assembly-paper.aux)
+\openout1 = `assembly-paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen116
+\scratchbox=\box26
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen117
+\MPnumerator=\count96
+\makeMPintoPDFobject=\count97
+\everyMPtoPDFconversion=\toks22
+) (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 64.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 64.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 64.
+
+[1
+
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] [4] [5] [6] [7] [8] [9]
+
+LaTeX Warning: Reference `ecolimap|' on page 10 undefined on input line 152.
+
+[10] [11] [12] [13]
+<./figures/genome-coverage1.png, id=51, 824.07875pt x 561.09625pt>
+File: ./figures/genome-coverage1.png Graphic file (type png)
+
+<use ./figures/genome-coverage1.png>
+Package pdftex.def Info: ./figures/genome-coverage1.png used on input line 202.
+
+(pdftex.def)             Requested size: 659.2639pt x 448.87761pt.
+
+
+LaTeX Warning: Float too large for page by 21.63889pt on input line 205.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <./figures/genome-coverage1.png>]
+<./figures/genome-coverage2.png, id=55, 831.105pt x 560.0925pt>
+File: ./figures/genome-coverage2.png Graphic file (type png)
+
+<use ./figures/genome-coverage2.png>
+Package pdftex.def Info: ./figures/genome-coverage2.png used on input line 210.
+
+(pdftex.def)             Requested size: 664.8849pt x 448.0746pt.
+
+
+LaTeX Warning: Float too large for page by 20.83588pt on input line 213.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15 <./figures/genome-coverage2.png>]
+<./figures/contig-lengths.pdf, id=59, 578.16pt x 433.62pt>
+File: ./figures/contig-lengths.pdf Graphic file (type pdf)
+
+<use ./figures/contig-lengths.pdf>
+Package pdftex.def Info: ./figures/contig-lengths.pdf used on input line 218.
+(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
+ [16
+
+
+
+
+
+ <./figures/contig-lengths.pdf>]
+<./figures/comparison-coverage.pdf, id=93, 578.16pt x 433.62pt>
+File: ./figures/comparison-coverage.pdf Graphic file (type pdf)
+
+<use ./figures/comparison-coverage.pdf>
+Package pdftex.def Info: ./figures/comparison-coverage.pdf used on input line 2
+26.
+(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
+
+<./figures/coverage.pdf, id=94, 578.16pt x 433.62pt>
+File: ./figures/coverage.pdf Graphic file (type pdf)
+
+<use ./figures/coverage.pdf>
+Package pdftex.def Info: ./figures/coverage.pdf used on input line 233.
+(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/ref_gi32470572.pdf, id=95, 578.16pt x 433.62pt>
+File: ./figures/ref_gi32470572.pdf Graphic file (type pdf)
+
+<use ./figures/ref_gi32470572.pdf>
+Package pdftex.def Info: ./figures/ref_gi32470572.pdf used on input line 239.
+(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
+
+Underfull \hbox (badness 1377) in paragraph at lines 240--240
+[]\OT1/cmr/m/n/10.95 Figure 6: Align-ment of reads (col-ored by orig-i-nat-ing 
+par-ti-tion) to ref-er-ence genome
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/NC_0074901.png, id=96, 578.16pt x 433.62pt>
+File: ./figures/NC_0074901.png Graphic file (type png)
+
+<use ./figures/NC_0074901.png>
+Package pdftex.def Info: ./figures/NC_0074901.png used on input line 246.
+(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
+
+Underfull \hbox (badness 1377) in paragraph at lines 247--247
+[]\OT1/cmr/m/n/10.95 Figure 7: Align-ment of reads (col-ored by orig-i-nat-ing 
+par-ti-tion) to ref-er-ence genome
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/ecolis-partitions.pdf, id=98, 393.47pt x 614.295pt>
+File: ./figures/ecolis-partitions.pdf Graphic file (type pdf)
+
+<use ./figures/ecolis-partitions.pdf>
+Package pdftex.def Info: ./figures/ecolis-partitions.pdf used on input line 252
+.
+(pdftex.def)             Requested size: 448.71654pt x 700.54727pt.
+
+
+LaTeX Warning: Float too large for page by 66.5696pt on input line 255.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/ecoli-multi-genomes.png, id=99, 678.3744pt x 461.5644pt>
+File: ./figures/ecoli-multi-genomes.png Graphic file (type png)
+
+<use ./figures/ecoli-multi-genomes.png>
+Package pdftex.def Info: ./figures/ecoli-multi-genomes.png used on input line 2
+58.
+(pdftex.def)             Requested size: 452.98688pt x 308.21124pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/memory-requirements.png, id=100, 353.32pt x 212.795pt>
+File: ./figures/memory-requirements.png Graphic file (type png)
+
+<use ./figures/memory-requirements.png>
+Package pdftex.def Info: ./figures/memory-requirements.png used on input line 2
+64.
+(pdftex.def)             Requested size: 452.97588pt x 272.81499pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/mockdiginormhist.pdf, id=101, 578.16pt x 433.62pt>
+File: ./figures/mockdiginormhist.pdf Graphic file (type pdf)
+
+<use ./figures/mockdiginormhist.pdf>
+Package pdftex.def Info: ./figures/mockdiginormhist.pdf used on input line 271.
+
+(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/soildiginorm.pdf, id=102, 578.16pt x 433.62pt>
+File: ./figures/soildiginorm.pdf Graphic file (type pdf)
+
+<use ./figures/soildiginorm.pdf>
+Package pdftex.def Info: ./figures/soildiginorm.pdf used on input line 278.
+(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./figures/assembly-coverage.pdf, id=103, 578.16pt x 433.62pt>
+File: ./figures/assembly-coverage.pdf Graphic file (type pdf)
+
+<use ./figures/assembly-coverage.pdf>
+Package pdftex.def Info: ./figures/assembly-coverage.pdf used on input line 285
+.
+(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17
+
+ <./figures/comparison-coverage.pdf>] [18 <./figures/coverage.pdf>] [19 <./figu
+res/ref_gi32470572.pdf>] [20 <./figures/NC_0074901.png>] [21 <./figures/ecolis-
+partitions.pdf>] [22 <./figures/ecoli-multi-genomes.png> <./figures/memory-requ
+irements.png>] [23 <./figures/mockdiginormhist.pdf>] [24 <./figures/soildiginor
+m.pdf>] [25 <./figures/assembly-coverage.pdf>]
+<./figures/data-reduction.pdf, id=381, 614.295pt x 794.97pt>
+File: ./figures/data-reduction.pdf Graphic file (type pdf)
+
+<use ./figures/data-reduction.pdf>
+Package pdftex.def Info: ./figures/data-reduction.pdf used on input line 292.
+(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
+
+
+LaTeX Warning: Float too large for page by 222.33815pt on input line 295.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[26 <./figures/data-reduction.pdf>]
+<./figures/reference-genomes.pdf, id=405, 794.97pt x 614.295pt>
+File: ./figures/reference-genomes.pdf Graphic file (type pdf)
+
+<use ./figures/reference-genomes.pdf>
+Package pdftex.def Info: ./figures/reference-genomes.pdf used on input line 300
+.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+
+Overfull \hbox (94.4612pt too wide) in paragraph at lines 300--301
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 215.25478pt on input line 303.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27 <./figures/reference-genomes.pdf>]
+<./figures/assembly-stats.pdf, id=428, 794.97pt x 614.295pt>
+File: ./figures/assembly-stats.pdf Graphic file (type pdf)
+
+<use ./figures/assembly-stats.pdf>
+Package pdftex.def Info: ./figures/assembly-stats.pdf used on input line 308.
+(pdftex.def)             Requested size: 953.95924pt x 737.1503pt.
+
+Overfull \hbox (253.45238pt too wide) in paragraph at lines 308--309
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 338.11159pt on input line 311.
+
+[28 <./figures/assembly-stats.pdf>]
+<./figures/mapping-summary-gpgc.pdf, id=451, 614.295pt x 794.97pt>
+File: ./figures/mapping-summary-gpgc.pdf Graphic file (type pdf)
+
+<use ./figures/mapping-summary-gpgc.pdf>
+Package pdftex.def Info: ./figures/mapping-summary-gpgc.pdf used on input line 
+316.
+(pdftex.def)             Requested size: 737.1503pt x 953.95924pt.
+
+Overfull \hbox (36.64343pt too wide) in paragraph at lines 316--317
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 528.32884pt on input line 319.
+
+[29 <./figures/mapping-summary-gpgc.pdf>] (./assembly-paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2631 strings out of 493633
+ 38647 string characters out of 3143378
+ 102002 words of memory out of 3000000
+ 5880 multiletter control sequences out of 15000+200000
+ 9259 words of font info for 32 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 38i,11n,43p,2012b,280s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
+/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on assembly-paper.pdf (29 pages, 997164 bytes).
+PDF statistics:
+ 498 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+
