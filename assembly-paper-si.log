@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  3 OCT 2012 12:27
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  3 OCT 2012 12:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**assembly-paper.tex
-(./assembly-paper.tex
+**assembly-paper-si.tex
+(./assembly-paper-si.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
@@ -148,21 +148,21 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(./assembly-paper.aux)
-\openout1 = `assembly-paper.aux'.
+(./assembly-paper-si.aux)
+\openout1 = `assembly-paper-si.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -255,253 +255,55 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 66.
+(Font)              <12> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 66.
+(Font)              <8> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 66.
+(Font)              <6> on input line 64.
 
 
-LaTeX Warning: Citation `Gans:2005p1365' on page 1 undefined on input line 69.
+LaTeX Warning: Reference `kmercoverage' on page 1 undefined on input line 68.
+
+
+LaTeX Warning: Reference `datareduction' on page 1 undefined on input line 68.
 
 [1
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] <./figures/reference-genomes.pdf, id=19, 794.97pt x 614.295pt>
+File: ./figures/reference-genomes.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `referencestats' on page 2 undefined on input line 81.
+<use ./figures/reference-genomes.pdf>
+Package pdftex.def Info: ./figures/reference-genomes.pdf used on input line 92.
 
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
 
-[2]
-
-LaTeX Warning: Reference `coveragecompare' on page 3 undefined on input line 83
-.
-
-
-LaTeX Warning: Reference `referencestats' on page 3 undefined on input line 87.
-
-
-
-LaTeX Warning: Reference `partitionreference' on page 3 undefined on input line
- 87.
-
-[3]
-
-LaTeX Warning: Reference `referencestats' on page 4 undefined on input line 89.
-
-
-[4] [5] [6] [7]
-
-LaTeX Warning: Reference `partitionreference' on page 8 undefined on input line
- 122.
-
-
-LaTeX Warning: Reference `ecolimap|' on page 8 undefined on input line 124.
-
-[8] [9] [10]
-<./figures/genome-coverage1.png, id=41, 824.07875pt x 561.09625pt>
-File: ./figures/genome-coverage1.png Graphic file (type png)
-
-<use ./figures/genome-coverage1.png>
-Package pdftex.def Info: ./figures/genome-coverage1.png used on input line 158.
-
-(pdftex.def)             Requested size: 659.2639pt x 448.87761pt.
-
-
-LaTeX Warning: Float too large for page by 21.63889pt on input line 161.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11 <./figures/genome-coverage1.png>]
-<./figures/genome-coverage2.png, id=45, 831.105pt x 560.0925pt>
-File: ./figures/genome-coverage2.png Graphic file (type png)
-
-<use ./figures/genome-coverage2.png>
-Package pdftex.def Info: ./figures/genome-coverage2.png used on input line 166.
-
-(pdftex.def)             Requested size: 664.8849pt x 448.0746pt.
-
-
-LaTeX Warning: Float too large for page by 20.83588pt on input line 169.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[12 <./figures/genome-coverage2.png>]
-<./figures/contig-lengths.pdf, id=49, 578.16pt x 433.62pt>
-File: ./figures/contig-lengths.pdf Graphic file (type pdf)
-
-<use ./figures/contig-lengths.pdf>
-Package pdftex.def Info: ./figures/contig-lengths.pdf used on input line 174.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [13
-
-
-
-
-
- <./figures/contig-lengths.pdf>]
-<./figures/coverage.pdf, id=84, 578.16pt x 433.62pt>
-File: ./figures/coverage.pdf Graphic file (type pdf)
-
-<use ./figures/coverage.pdf>
-Package pdftex.def Info: ./figures/coverage.pdf used on input line 183.
-(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
-
-<./figures/ref_gi32470572.pdf, id=85, 578.16pt x 433.62pt>
-File: ./figures/ref_gi32470572.pdf Graphic file (type pdf)
-
-<use ./figures/ref_gi32470572.pdf>
-Package pdftex.def Info: ./figures/ref_gi32470572.pdf used on input line 189.
-(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
-
-Underfull \hbox (badness 1377) in paragraph at lines 190--190
-[]\OT1/cmr/m/n/10.95 Figure 5: Align-ment of reads (col-ored by orig-i-nat-ing 
-par-ti-tion) to ref-er-ence genome
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./figures/ecolis-partitions.pdf, id=86, 393.47pt x 614.295pt>
-File: ./figures/ecolis-partitions.pdf Graphic file (type pdf)
-
-<use ./figures/ecolis-partitions.pdf>
-Package pdftex.def Info: ./figures/ecolis-partitions.pdf used on input line 197
-.
-(pdftex.def)             Requested size: 448.71654pt x 700.54727pt.
-
-
-LaTeX Warning: Float too large for page by 66.5696pt on input line 200.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./figures/ecoli-multi-genomes.png, id=87, 678.3744pt x 461.5644pt>
-File: ./figures/ecoli-multi-genomes.png Graphic file (type png)
-
-<use ./figures/ecoli-multi-genomes.png>
-Package pdftex.def Info: ./figures/ecoli-multi-genomes.png used on input line 2
-03.
-(pdftex.def)             Requested size: 452.98688pt x 308.21124pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./figures/memory-requirements.png, id=89, 353.32pt x 212.795pt>
-File: ./figures/memory-requirements.png Graphic file (type png)
-
-<use ./figures/memory-requirements.png>
-Package pdftex.def Info: ./figures/memory-requirements.png used on input line 2
-09.
-(pdftex.def)             Requested size: 452.97588pt x 272.81499pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./figures/mockdiginormhist.pdf, id=90, 578.16pt x 433.62pt>
-File: ./figures/mockdiginormhist.pdf Graphic file (type pdf)
-
-<use ./figures/mockdiginormhist.pdf>
-Package pdftex.def Info: ./figures/mockdiginormhist.pdf used on input line 216.
-
-(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./figures/soildiginorm.pdf, id=91, 578.16pt x 433.62pt>
-File: ./figures/soildiginorm.pdf Graphic file (type pdf)
-
-<use ./figures/soildiginorm.pdf>
-Package pdftex.def Info: ./figures/soildiginorm.pdf used on input line 223.
-(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./figures/assembly-coverage.pdf, id=92, 578.16pt x 433.62pt>
-File: ./figures/assembly-coverage.pdf Graphic file (type pdf)
-
-<use ./figures/assembly-coverage.pdf>
-Package pdftex.def Info: ./figures/assembly-coverage.pdf used on input line 230
-.
-(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14
-
- <./figures/coverage.pdf>] [15 <./figures/ref_gi32470572.pdf>] [16 <./figures/e
-colis-partitions.pdf>] [17 <./figures/ecoli-multi-genomes.png> <./figures/memor
-y-requirements.png>] [18 <./figures/mockdiginormhist.pdf>] [19 <./figures/soild
-iginorm.pdf>] [20 <./figures/assembly-coverage.pdf>]
-<./figures/data-reduction.pdf, id=325, 614.295pt x 794.97pt>
-File: ./figures/data-reduction.pdf Graphic file (type pdf)
-
-<use ./figures/data-reduction.pdf>
-Package pdftex.def Info: ./figures/data-reduction.pdf used on input line 237.
-(pdftex.def)             Requested size: 491.43666pt x 635.97687pt.
-
-
-LaTeX Warning: Float too large for page by 222.33815pt on input line 240.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[21 <./figures/data-reduction.pdf>]
-<./figures/assembly-stats.pdf, id=348, 794.97pt x 614.295pt>
-File: ./figures/assembly-stats.pdf Graphic file (type pdf)
-
-<use ./figures/assembly-stats.pdf>
-Package pdftex.def Info: ./figures/assembly-stats.pdf used on input line 246.
-(pdftex.def)             Requested size: 953.95924pt x 737.1503pt.
-
-Overfull \hbox (253.45238pt too wide) in paragraph at lines 246--247
+Overfull \hbox (94.4612pt too wide) in paragraph at lines 92--93
  [] 
  []
 
 
-LaTeX Warning: Float too large for page by 338.11159pt on input line 249.
-
-[22 <./figures/assembly-stats.pdf>]
-<./figures/mapping-summary-gpgc.pdf, id=372, 614.295pt x 794.97pt>
-File: ./figures/mapping-summary-gpgc.pdf Graphic file (type pdf)
-
-<use ./figures/mapping-summary-gpgc.pdf>
-Package pdftex.def Info: ./figures/mapping-summary-gpgc.pdf used on input line 
-254.
-(pdftex.def)             Requested size: 737.1503pt x 953.95924pt.
-
-Overfull \hbox (36.64343pt too wide) in paragraph at lines 254--255
- [] 
- []
+LaTeX Warning: Float too large for page by 215.25478pt on input line 95.
 
 
-LaTeX Warning: Float too large for page by 528.32884pt on input line 257.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23 <./figures/mapping-summary-gpgc.pdf>] (./assembly-paper.bbl [24
-
-
-
-
-
-
-]) [25]
-(./assembly-paper.aux)
+[4 <./figures/reference-genomes.pdf>] (./assembly-paper-si.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 2628 strings out of 493633
- 38363 string characters out of 3143378
- 101971 words of memory out of 3000000
- 5877 multiletter control sequences out of 15000+200000
+ 2536 strings out of 493633
+ 35971 string characters out of 3143378
+ 100877 words of memory out of 3000000
+ 5802 multiletter control sequences out of 15000+200000
  8900 words of font info for 31 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,10n,43p,2747b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,10n,43p,1156b,280s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
@@ -509,10 +311,10 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 /local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on assembly-paper.pdf (25 pages, 818624 bytes).
+Output written on assembly-paper-si.pdf (4 pages, 121736 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
+ 65 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
