@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2011)
+This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: assembly-paper.aux
-The style file: plain.bst
+The style file: naturemag.bst
 Database file #1: assembly-paper.bib
-You've used 7 entries,
-            2118 wiz_defined-function locations,
-            557 strings with 8807 characters,
-and the built_in function-call counts, 8220 in all, are:
-= -- 618
-> -- 1051
+You've used 8 entries,
+            2348 wiz_defined-function locations,
+            1041 strings with 13711 characters,
+and the built_in function-call counts, 3185 in all, are:
+= -- 238
+> -- 68
 < -- 0
-+ -- 420
-- -- 412
-* -- 962
-:= -- 1535
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 227
++ -- 34
+- -- 17
+* -- 397
+:= -- 367
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 77
-empty$ -- 179
-format.name$ -- 412
-if$ -- 1415
+cite$ -- 8
+duplicate$ -- 289
+empty$ -- 294
+format.name$ -- 25
+if$ -- 624
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 7
-newline$ -- 38
-num.names$ -- 14
-pop$ -- 213
+int.to.str$ -- 8
+missing$ -- 65
+newline$ -- 48
+num.names$ -- 8
+pop$ -- 34
 preamble$ -- 1
-purify$ -- 220
+purify$ -- 0
 quote$ -- 0
-skip$ -- 49
+skip$ -- 41
 stack$ -- 0
-substring$ -- 178
-swap$ -- 7
+substring$ -- 167
+swap$ -- 284
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
+type$ -- 0
 warning$ -- 0
-while$ -- 28
-width$ -- 8
-write$ -- 79
+while$ -- 24
+width$ -- 9
+write$ -- 95
