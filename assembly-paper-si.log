@@ -1,24 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  13 NOV 2012 22:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.6.19)  13 NOV 2012 23:17
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **assembly-paper-si
 (./assembly-paper-si.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
-c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
-h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
-h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
-ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
-rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
-kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
- polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
-lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
-welsh, loaded.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size11.clo
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -33,23 +23,20 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
-)
-(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
 \Gm@cntv=\count88
@@ -58,55 +45,44 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@wd@mp=\dimen104
 \Gm@odd@mp=\dimen105
 \Gm@even@mp=\dimen106
-\Gm@layoutwidth=\dimen107
-\Gm@layoutheight=\dimen108
-\Gm@layouthoffset=\dimen109
-\Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count90
 ))
-\Gin@req@height=\dimen111
-\Gin@req@width=\dimen112
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/array.sty
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen113
-\extrarowheight=\dimen114
+\col@sep=\dimen109
+\extrarowheight=\dimen110
 \NC@list=\toks16
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/verbatim.sty
+(/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks17
 \verbatim@line=\toks18
 \verbatim@in@stream=\read1
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip45
 \f@ncyO@elh=\skip46
 \f@ncyO@erh=\skip47
@@ -117,31 +93,34 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \f@ncyO@olf=\skip52
 \f@ncyO@orf=\skip53
 )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks19
 \inpenc@posthook=\toks20
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin9.def
+(/usr/share/texmf-texlive/tex/latex/base/latin9.def
 File: latin9.def 2008/03/30 v1.1d Input encoding file
 ))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/lscape.sty
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(/usr/local/texlive/2012/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/babel/english.ldf
+(/usr/share/texmf-texlive/tex/generic/babel/english.ldf
 Language: english 2005/03/30 v3.3o English support from the babel system
 
-(/usr/local/texlive/2012/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count91
-\U@D=\dimen115
+\U@D=\dimen111
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -161,97 +140,60 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=452.9679pt
-* \textheight=700.50687pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 72.26999pt, 452.9679pt, 72.26999pt
+v-parts: 72.26999pt, 700.50687pt, 72.26999pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  452.9679pt
+\textheight 700.50687pt
+\oddsidemargin  0.0pt
+\evensidemargin 0.0pt
+\topmargin  -37.0pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 59.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.0pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
 
-(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count92
-\scratchdimen=\dimen116
+\scratchdimen=\dimen112
 \scratchbox=\box26
 \nofMPsegments=\count93
 \nofMParguments=\count94
 \everyMPshowfont=\toks21
 \MPscratchCnt=\count95
-\MPscratchDim=\dimen117
+\MPscratchDim=\dimen113
 \MPnumerator=\count96
-\makeMPintoPDFobject=\count97
 \everyMPtoPDFconversion=\toks22
-) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -267,14 +209,14 @@ LaTeX Warning: Reference `datareduction' on page 1 undefined on input line 68.
 
 [1
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 104.
  [4]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 118.
 
- (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
@@ -283,82 +225,54 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 
 LaTeX Warning: Float too large for page by 18.5818pt on input line 149.
 
-[5] <./figures/coverage.pdf, id=28, 578.16pt x 433.62pt>
+[5] <./figures/coverage.pdf, id=27, 578.16pt x 433.62pt>
 File: ./figures/coverage.pdf Graphic file (type pdf)
 
 <use ./figures/coverage.pdf>
-Package pdftex.def Info: ./figures/coverage.pdf used on input line 166.
-(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
-
-<./figures/coverage1.pdf, id=29, 578.16pt x 433.62pt>
+<./figures/coverage1.pdf, id=28, 578.16pt x 433.62pt>
 File: ./figures/coverage1.pdf Graphic file (type pdf)
 
 <use ./figures/coverage1.pdf>
-Package pdftex.def Info: ./figures/coverage1.pdf used on input line 172.
-(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
-
 Overfull \hbox (9.56073pt too wide) in paragraph at lines 172--173
  [] 
  []
 
-<./figures/coverage2.pdf, id=30, 578.16pt x 433.62pt>
+<./figures/coverage2.pdf, id=29, 578.16pt x 433.62pt>
 File: ./figures/coverage2.pdf Graphic file (type pdf)
 
 <use ./figures/coverage2.pdf>
-Package pdftex.def Info: ./figures/coverage2.pdf used on input line 178.
-(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
-
 Overfull \hbox (9.56073pt too wide) in paragraph at lines 178--179
  [] 
  []
 
-<./figures/contig-lengths.pdf, id=31, 578.16pt x 433.62pt>
+<./figures/contig-lengths.pdf, id=30, 578.16pt x 433.62pt>
 File: ./figures/contig-lengths.pdf Graphic file (type pdf)
 
 <use ./figures/contig-lengths.pdf>
-Package pdftex.def Info: ./figures/contig-lengths.pdf used on input line 184.
-(pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
-
-<./figures/ref_gi32470572.pdf, id=32, 578.16pt x 433.62pt>
+<./figures/ref_gi32470572.pdf, id=31, 578.16pt x 433.62pt>
 File: ./figures/ref_gi32470572.pdf Graphic file (type pdf)
 
 <use ./figures/ref_gi32470572.pdf>
-Package pdftex.def Info: ./figures/ref_gi32470572.pdf used on input line 190.
-(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
-
 Underfull \hbox (badness 1377) in paragraph at lines 191--191
 []\OT1/cmr/m/n/10.95 Figure 5: Align-ment of reads (col-ored by orig-i-nat-ing 
 par-ti-tion) to ref-er-ence genome
  []
 
-<./figures/ecoli-multi-genomes.pdf, id=33, 578.16pt x 433.62pt>
+<./figures/ecoli-multi-genomes.pdf, id=32, 578.16pt x 433.62pt>
 File: ./figures/ecoli-multi-genomes.pdf Graphic file (type pdf)
 
 <use ./figures/ecoli-multi-genomes.pdf>
-Package pdftex.def Info: ./figures/ecoli-multi-genomes.pdf used on input line 1
-96.
-(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
-
-<./figures/memory.pdf, id=34, 578.16pt x 433.62pt>
+<./figures/memory.pdf, id=33, 578.16pt x 433.62pt>
 File: ./figures/memory.pdf Graphic file (type pdf)
  <use ./figures/memory.pdf>
-Package pdftex.def Info: ./figures/memory.pdf used on input line 204.
-(pdftex.def)             Requested size: 452.96558pt x 339.72418pt.
-
-<./figures/corn.pdf, id=35, 1093.98715pt x 747.09111pt>
+<./figures/corn.pdf, id=34, 1093.98715pt x 747.09111pt>
 File: ./figures/corn.pdf Graphic file (type pdf)
 
 <use ./figures/corn.pdf>
-Package pdftex.def Info: ./figures/corn.pdf used on input line 210.
-(pdftex.def)             Requested size: 452.96126pt x 309.33025pt.
-
-<./figures/prairie.pdf, id=36, 944.02687pt x 641.39626pt>
+<./figures/prairie.pdf, id=35, 944.02687pt x 641.39626pt>
 File: ./figures/prairie.pdf Graphic file (type pdf)
 
-<use ./figures/prairie.pdf>
-Package pdftex.def Info: ./figures/prairie.pdf used on input line 216.
-(pdftex.def)             Requested size: 452.9693pt x 307.75905pt.
- [6
+<use ./figures/prairie.pdf> [6
 
 
  <./figures/coverage.pdf>] [7 <./figures/coverage1.pdf>] [8 <./figures/coverage
@@ -374,27 +288,25 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2631 strings out of 493488
- 37846 string characters out of 3141326
- 109455 words of memory out of 3000000
- 5895 multiletter control sequences out of 15000+200000
+ 1966 strings out of 495061
+ 26201 string characters out of 1182621
+ 91119 words of memory out of 3000000
+ 5137 multiletter control sequences out of 15000+50000
  9516 words of font info for 33 fonts, out of 3000000 for 9000
- 957 hyphenation exceptions out of 8191
- 38i,10n,43p,1031b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
-ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
-/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on assembly-paper-si.pdf (12 pages, 539728 bytes).
+ 28 hyphenation exceptions out of 8191
+ 25i,10n,43p,1031b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on assembly-paper-si.pdf (12 pages, 572578 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 441 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
