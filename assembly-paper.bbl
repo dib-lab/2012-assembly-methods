@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -59,5 +59,52 @@
   diversity and high metal toxicity in soil}.
 \newblock \emph{\bibinfo{journal}{Science}} \textbf{\bibinfo{volume}{309}},
   \bibinfo{pages}{1387--90} (\bibinfo{year}{2005}).
+
+\bibitem{Sharon:2012kx}
+\bibinfo{author}{Sharon, I.} \emph{et~al.}
+\newblock \bibinfo{title}{{Time series community genomics analysis reveals
+  rapid shifts in bacterial species, strains, and phage during infant gut
+  colonization}}.
+\newblock \emph{\bibinfo{journal}{Genome Research}}  (\bibinfo{year}{2012}).
+
+\bibitem{Girvan:2005jv}
+\bibinfo{author}{Girvan, M.~S.}, \bibinfo{author}{Campbell, C.~D.},
+  \bibinfo{author}{Killham, K.}, \bibinfo{author}{Prosser, J.~I.} \&
+  \bibinfo{author}{Glover, L.~A.}
+\newblock \bibinfo{title}{{Bacterial diversity promotes community stability and
+  functional resilience after perturbation.}}
+\newblock \emph{\bibinfo{journal}{Environmental Microbiology}}
+  \textbf{\bibinfo{volume}{7}}, \bibinfo{pages}{301--313}
+  (\bibinfo{year}{2005}).
+
+\bibitem{McGradySteed:1997uj}
+\bibinfo{author}{McGrady-Steed, J.}, \bibinfo{author}{Harris, P.~M.} \&
+  \bibinfo{author}{Morin, P.~J.}
+\newblock \bibinfo{title}{{Biodiversity regulates ecosystem predictability}}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{390}},
+  \bibinfo{pages}{162--165} (\bibinfo{year}{1997}).
+
+\bibitem{Muller:2002cd}
+\bibinfo{author}{M{\"u}ller, A.~K.}, \bibinfo{author}{Westergaard, K.},
+  \bibinfo{author}{Christensen, S.} \& \bibinfo{author}{S{\o}rensen, S.~J.}
+\newblock \bibinfo{title}{{The diversity and function of soil microbial
+  communities exposed to different disturbances.}}
+\newblock \emph{\bibinfo{journal}{Microbial ecology}}
+  \textbf{\bibinfo{volume}{44}}, \bibinfo{pages}{49--58}
+  (\bibinfo{year}{2002}).
+
+\bibitem{Konstantinidis:2004hr}
+\bibinfo{author}{Konstantinidis, K.~T.} \& \bibinfo{author}{Tiedje, J.~M.}
+\newblock \bibinfo{title}{{Trends between gene content and genome size in
+  prokaryotic species with larger genomes}}.
+\newblock \emph{\bibinfo{journal}{Proceedings of the National Academy of
+  Sciences of the United States of America}} \textbf{\bibinfo{volume}{101}},
+  \bibinfo{pages}{3160--3165} (\bibinfo{year}{2004}).
+
+\bibitem{url2}
+\urlprefix\url{http://nbviewer.ipython.org/urls/raw.github.com/ngs-docs/ngs-notebooks/master/ngs-71-hmp-diginorm.ipynb}.
+
+\bibitem{url1}
+\urlprefix\url{http://nbviewer.ipython.org/urls/raw.github.com/ngs-docs/ngs-notebooks/master/ngs-70-hmp-diginorm.ipynb}.
 
 \end{thebibliography}
