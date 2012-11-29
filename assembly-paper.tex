@@ -74,30 +74,35 @@
 
 \section{Introduction}  
 Complex microbial communities operate at the heart of many crucial
-environmental, ecological, and biomedical processes, providing
+terrestrial, aquatic, and host-associated processes, providing
 critical ecosystem functionality that underpins much of biology
 (\cite{Arumugam:2011p735,Hess:2011p686,Iverson:2012p1281,
-Mackelprang:2011p1087,Qin:2010p189,Tringe:2005p174,Venter:2004p170}).
+  Mackelprang:2011p1087,Qin:2010p189,Tringe:2005p174,Venter:2004p170}).
 These systems are difficult to study in situ, and consequently, we
-lack a fundamental understanding of their diversity and function, much
-less how they self-assemble, maintain themselves, and evolve through
-time.  Advances in DNA sequencing technologies now provide
-unprecedented access to these communities in the form of millions to
-billions of short-read sequences of community DNA
+lack a fundamental understanding of their diversity and functional
+potential, much less how they self-assemble, maintain themselves, and
+evolve through time.  Advances in DNA sequencing technologies now
+provide unprecedented access to these communities in the form of
+millions to billions of short-read sequences of community DNA
 \cite{Hess:2011p686,Mackelprang:2011p1087,Qin:2010p189}.  Even more
 sequencing is needed to detect the rare species in environmental
-samples, e.g., up to 50 Tbp for an individual gram of soil
-\cite{Gans:2005p1365}.  Both the read lengths and volume of sequencing
-data pose new challenges to traditional analysis approaches of
-sequencing data.  Short read lengths and their associated sequencing
-errors and biases contain little biological signal and are noisy,
-limiting direct annotation approaches against known reference genomes.
-Further complicating analysis is that the majority of genes sequenced
-from metagenomes are not similar to known genes
+samples, e.g., up to 50 Tbp (and likely more) for an individual gram
+of soil \cite{Gans:2005p1365}.  Both the read lengths and volume of
+sequencing data pose new challenges to traditional analysis approaches
+of sequencing data.  A single metagenomic project can generate as much
+or more data than has been deposited in reference databases, i.e., a
+human-gut metagenome containing 578 Gbp (\cite{Qin:2010p189} more than
+doubles the total content of the NCBI RefSeq database containing 202
+Gbp (Release 56).  In addition to volume of the metagenomic data,
+short read lengths and their associated sequencing errors and biases
+contain little biological signal and are noisy, limiting direct
+annotation approaches against known reference genomes.  Further
+complicating analysis is that the majority of genes sequenced from
+metagenomes are not similar to known genes
 \cite{Arumugam:2011p735,Qin:2010p189}.
 
 \emph{De novo} assembly of raw sequencing data offers several
-advantages for studying sequencing datasets.  It both reduces the
+advantages for studying sequences.  It both reduces the
 presence of sequencing errors and the total number of sequences for
 analysis by identifying consensus sequences from overlapping reads.
 These resulting assembled contigs are longer than sequencing reads and
@@ -119,19 +124,20 @@ capacity of sample diversity and volume.
 
 Here, we present a novel set of approaches which enable large-scale
 metagenomic de novo assembly.  The first approach reduces the dataset
-size by discarding reads from high-coverage regions.  Subsequently,
-reads are separated based on asembly graph connectivity, resulting in
-easily assembled partitions.  We evaluate these approaches using the
-assembly of a human gut mock community dataset and find that our
-methods result in assemblies nearly identical to assemblies from the
-unprocessed dataset.  Next, we apply our approaches towards the
-assembly of two previously intractable soil metagenomes, one from Iowa
-agricultural soil under continuous cultivation, and one from native
-Iowa prairie.  We compare the predicted functional capacities and
-phylogenetic content of the assemblies and conclude that despite
-significant phylogenetic differences, the functions encoded in both
-soil data sets are similar.  We also show that there is virtually no
-strain-level heterogeneity dectable within these samples.
+size by discarding reads from high-coverage regions, and with it
+problematic errors.  Subsequently, reads are separated based on
+assembly graph connectivity, resulting in easily assembled partitions.
+We evaluate these approaches using the assembly of a human gut mock
+community dataset and find that our methods result in assemblies
+nearly identical to assemblies from the unprocessed dataset.  Next, we
+apply our approaches towards the assembly of two previously
+intractable soil metagenomes, one from Iowa agricultural soil under
+continuous cultivation, and one from native Iowa prairie.  We compare
+the predicted functional capacities and phylogenetic content of the
+assemblies and conclude that despite significant phylogenetic
+differences, the functions encoded in both soil data sets are similar.
+We also show that there is virtually no strain-level heterogeneity
+dectable within these samples.
 
 \section{Results}
 
@@ -174,19 +180,18 @@ lengths in unfiltered and filtered assemblies were also comparable
 (Supp. Fig. 4).
 
 The abundance of assembled contigs and reference genomes could be
-recovered using the coverage of sequencing reads (Supp Fig. 5). 
-In general, a minimum depth of sequencing
-was observed when contigs were assembled. Above a sequencing coverage
-of five, the majority of reads which could be mapped to reference
-genomes were likely to be included in an assembled contig (Supp. Fig 3 and 4).  
-Below this threshold, reads could be mapped
-to reference genomes but were less likely to be associated with
-assembled contigs.  Using the reference genomes, assembly-based
-abundance estimations of references could be evaluated, and the
-estimations based on unfiltered and filtered assemblies compared.  The
-abundance estimations from the filtered assembly were significantly
-closer to predicted abundances from reference genomes (p-value of
-0.032, see Supp Info).
+recovered using the coverage of sequencing reads (Supp Fig. 5).  In
+general, a minimum depth of sequencing was observed when contigs were
+assembled. Above a sequencing coverage of five, the majority of reads
+which could be mapped to reference genomes were likely to be included
+in an assembled contig (Supp. Fig 3 and 4).  Below this threshold,
+reads could be mapped to reference genomes but were less likely to be
+associated with assembled contigs.  Using the reference genomes,
+assembly-based abundance estimations of references could be evaluated,
+and the estimations based on unfiltered and filtered assemblies
+compared.  The abundance estimations from the filtered assembly were
+significantly closer to predicted abundances from reference genomes
+(p-value of 0.032, see Supp Info).
 
 \subsubsection{Evaluation of partitioning reads based on connectivity}
 To divide the the remaining dataset, the filtered dataset was
