@@ -78,52 +78,53 @@ terrestrial, aquatic, and host-associated processes, providing
 critical ecosystem functionality that underpins much of biology
 (\cite{Arumugam:2011p735,Hess:2011p686,Iverson:2012p1281,
   Mackelprang:2011p1087,Qin:2010p189,Tringe:2005p174,Venter:2004p170}).
-These systems are difficult to study in situ, and consequently, we
-lack a fundamental understanding of their diversity and functional
-potential, much less how they self-assemble, maintain themselves, and
-evolve through time.  Advances in DNA sequencing technologies now
+These systems are difficult to study {\em in situ}, and we are only
+beginning to understand their diversity and functional potential, and
+have little insight into how they self-assemble, maintain themselves,
+and evolve through time.  Advances in DNA sequencing technologies now
 provide unprecedented access to these communities in the form of
 millions to billions of short-read sequences of community DNA
 \cite{Hess:2011p686,Mackelprang:2011p1087,Qin:2010p189}.  Even more
 sequencing is needed to detect the rare species in environmental
 samples, e.g., up to 50 Tbp (and likely more) for an individual gram
 of soil \cite{Gans:2005p1365}.  Both the read lengths and volume of
-sequencing data pose new challenges to traditional analysis approaches
-of sequencing data.  A single metagenomic project can generate as much
-or more data than has been deposited in reference databases, i.e., a
-human-gut metagenome containing 578 Gbp (\cite{Qin:2010p189} more than
-doubles the total content of the NCBI RefSeq database containing 202
-Gbp (Release 56).  In addition to volume of the metagenomic data,
-short read lengths and their associated sequencing errors and biases
-contain little biological signal and are noisy, limiting direct
-annotation approaches against known reference genomes.  Further
-complicating analysis is that the majority of genes sequenced from
-metagenomes are not similar to known genes
+sequencing data pose new challenges to sequence analysis approaches.
+A single metagenomic project can generate as much or more data than
+has been deposited in reference databases, i.e., a human-gut
+metagenome containing 578 Gbp (\cite{Qin:2010p189} more than doubles
+the total content of the NCBI RefSeq database containing 202 Gbp
+(Release 56).  In addition to volume of the metagenomic data, short
+read lengths and their associated sequencing errors and biases contain
+minimal signal fr homology searches and are error-prone, limiting
+direct annotation approaches against known reference genomes.  Moreover,
+the majority of genes sequenced from genomes contain little or no similarity
+to experimentally studied genes
 \cite{Arumugam:2011p735,Qin:2010p189}.
 
-\emph{De novo} assembly of raw sequencing data offers several
-advantages for studying sequences.  It both reduces the
-presence of sequencing errors and the total number of sequences for
-analysis by identifying consensus sequences from overlapping reads.
+\emph{De novo} assembly of raw sequence data offers several
+advantages over analyzing the sequences directly.  Assembly removes most
+random sequencing errors and decreases the total amount of data to be
+analyzed.
 These resulting assembled contigs are longer than sequencing reads and
 provide gene order.  Importantly, \emph{de novo} assembly does not
 rely on the existence of reference genomes, thus allowing for the
 discovery of novel elements.  The main challenge for metagenomic
-applications of \emph{do novo} assembly is that current assembly tools
+applications of \emph{de novo} assembly is that current assembly tools
 do not scale to the volumes of metagenomic datasets being generated:
 metagenomes assembled from rumen, human gut, and permafrost soil
 sequencing could only be assembled after sample preprocessing to
 discard low abundance sequences
 \cite{Hess:2011p686,Mackelprang:2011p1087,Qin:2010p189}.  Traditional
 assemblers have been designed for the assembly of single genomes whose
-abundance distribution and diversity content are significantly
-different from the mixed populations of metagenomes, and although many
+abundance distribution and diversity content differ from community metagenomes,
+and although many
 new metagenome-specific assemblers have been developed to address
-characteristics of mixed population assembly, these are limited in
+community asssembly,
+these are limited in
 capacity of sample diversity and volume.
 
 Here, we present a novel set of approaches which enable large-scale
-metagenomic de novo assembly.  The first approach reduces the dataset
+metagenomic {\em de novo} assembly.  The first approach reduces the dataset
 size by discarding reads from high-coverage regions, and with it
 problematic errors.  Subsequently, reads are separated based on
 assembly graph connectivity, resulting in easily assembled partitions.
@@ -136,8 +137,8 @@ continuous cultivation, and one from native Iowa prairie.  We compare
 the predicted functional capacities and phylogenetic content of the
 assemblies and conclude that despite significant phylogenetic
 differences, the functions encoded in both soil data sets are similar.
-We also show that there is virtually no strain-level heterogeneity
-dectable within these samples.
+We also show that virtually no strain-level heterogeneity is present
+within the assembled reads.
 
 \section{Results}
 
@@ -146,11 +147,11 @@ dectable within these samples.
 \subsubsection{Evaluation of data reduction through digital normalization 
 and high abundance filtering}
 
-The recovery of reference genomes from de novo metagenomic assembly
+The recovery of reference genomes from {\em de novo} metagenomic assembly
 was evaluated, comparing unfiltered traditional assembly to the the
 described filtered assembly (See Methods and Supp. Info). Initially,
 the abundance of genomes within the mock dataset was estimated based
-on the reference genome coverage of sequencing reads in the unfiltered
+on the reference genome coverage of sequence reads in the unfiltered
 dataset.  Coverage (excluding genomes with less than 3-fold coverage)
 ranged from 6-fold to 2,000-fold coverages (Supp. Table
 1 and Supp Fig. 2 and 3).  Overall, the unfiltered dataset reads covered a
@@ -175,14 +176,13 @@ ref\textbar{}NC\_005007.1, and ref\textbar{}NC\_005003.1), the
 unfiltered assembly recovered significantly more of the original
 genomes; however, for the large majority of genomes the filtered
 assembly recovered similar (and sometimes greater) amounts of the
-reference genomes Supp Fig. 2 and 3).  The distribution of contig
+reference genomes (Supp. Fig. 2 and 3).  The distribution of contig
 lengths in unfiltered and filtered assemblies were also comparable
 (Supp. Fig. 4).
 
 The abundance of assembled contigs and reference genomes could be
 recovered using the coverage of sequencing reads (Supp Fig. 5).  In
-general, a minimum depth of sequencing was observed when contigs were
-assembled. Above a sequencing coverage of five, the majority of reads
+general, low coverage was observed for most assembled contigs. Above a sequencing coverage of five, the majority of reads
 which could be mapped to reference genomes were likely to be included
 in an assembled contig (Supp. Fig 3 and 4).  Below this threshold,
 reads could be mapped to reference genomes but were less likely to be
@@ -197,6 +197,7 @@ significantly closer to predicted abundances from reference genomes
 To divide the the remaining dataset, the filtered dataset was
 partitioned based on connectivity within a de Bruijn graph
 representation (previously described in Pell et al. and Howe et al.),
+% @CTB cite.
 and each partition was assembled independently.  The resulting
 assemblies of filtered, unpartitioned and filtered, partitioned
 datasets were compared and found to be greater than 99\% identical.
@@ -214,7 +215,11 @@ In general, reference genomes with high sequencing coverage were
 associated with fewer partitions (Supp Table 1), a
 total of 112 partitions contained reads from high abundance reference
 genomes (coverage above 25) compared to 2,771 partitions associated
-with low abundance genomes (coverage below 25).
+with low abundance genomes (coverage below 25).  This is consistent
+with the observation that the main effect of low coverage is to
+``break'' connectivity in the assembly graph.
+% @CTB we could cite pevzner here -- do we have room to add the de bruijn
+% graph citation from pnas early 2000s?
 
 %As expected, reads aligning to similar regions of a reference genome
 %were found to be associated with the the same partition (SI
@@ -222,12 +227,12 @@ with low abundance genomes (coverage below 25).
 
 To further evaluate the effects of partitioning, spiked reads from
 \emph{E. coli} genomes were introduced into the mock community
-dataset. A single spiked genome (\emph{E. coli} strain E24377A,
+dataset. Simulated reads from a single genome (\emph{E. coli} strain E24377A,
 NC\_009801.1 with 2\% error) was added to the mock community dataset
-and processed identically to the unfiltered mock dataset.  Similar
+and then processed in the same way as the unfiltered mock dataset.  Similar
 amounts of data reduction after digital normalization and partitioning
 (Table ~\ref{data-summary}) were observed.  Among the 81,154
-partitioned sets of reads, we identified only 2,580 partitions
+partitioned sets of reads, we identified only 2,580 (3.2\%) partitions
 containing reads from multiple genomes.  A total of 424 partitions
 contained reads from the spiked \emph{E. coli} genome (201 partitions
 contained \emph{only} spiked reads) and when assembled aligned with
@@ -236,7 +241,7 @@ bp) (Fig. ~\ref{ecolimap}).  Next, the same analysis was performed on
 the mock dataset after introducing five closely-related \emph{E. coli}
 strains into the mock community dataset.  Partitioning this
 ``mix-spiked" mock community dataset resulted in 81,425 partitions, of
-which 1,154 partitions contained reads associated with multiple
+which 1,154 (1.4\%) partitions contained reads associated with multiple
 genomes.  Among the partitions which contained reads associated with a
 single genome, 658 partitions contained reads originating from one of
 the spiked \emph{E. coli} strains.  In partitions containing greater
@@ -263,11 +268,11 @@ genome.
 
 \subsection{Characteristics of soil metagenomes}
 
-We next applied these approaches to the de novo assembly of two soil
-metagenomes.  Previously, the assembly of the Iowa corn and prairie
+We next applied these approaches to the {\em de novo} assembly of two soil
+metagenomes.  Iowa corn and prairie
 datasets (containing 1.8 billion and 3.3 billion reads, respectively)
-were impossible to assemble with readily available memory, e.g., 500
-GB.  A 75 million reads subset of the Iowa corn dataset alone required
+were could not be assembled with readily available hardware (500 GB of RAM).
+A 75 million reads subset of the Iowa corn dataset alone required
 110 GB of memory (Supp Fig. 7).  Applying the same
 filtering approaches as described above, the Iowa corn and prairie
 datasets were reduced to 1.4 billion and 2.2 billion reads,
@@ -303,7 +308,7 @@ less than 14 GB and 4 hours, enabling evaluation of multiple
 assemblers and various assembly parameters.
 
 The final assembly of the corn and prairie soil metagenomes resulted
-in a total of 1.9 million and 3.1 million contigs (Velvet),
+in a total of 1.9 million and 3.1 million contigs greater than 300 bp (Velvet),
 respectively, and a total assembly length of 912 million bp and 1.5
 billion bp, respectively.  To estimate abundance of assembled contigs
 and evaluate incorporation of reads, all quality-trimmed reads were
@@ -318,8 +323,8 @@ these mappings, the read coverage of assembled contigs within the soil
 metagenomes were estimated (Fig. ~\ref{soilassemblycoverage}).
 Overall, there is a positively skewed distribution of coverage of all
 contigs from both soil metagenomes, biased towards a coverage of less
-than ten-fold.  The Iowa corn and prairie assemblies contained 48\%
-and 31\% of total contigs with a median basepair coverage less than
+than ten-fold.  48\% and 31\% of total contigs in Iowa corn and prairie
+assemblies respectively had a median basepair coverage less than
 10.
 
 Among contigs, the presence of polymorphisms was examined by
@@ -348,26 +353,28 @@ calls which were supported by 95\% consensus from mapped reads over
 
 Assembled contigs with their respective bp-coverage (with a median bp
 coverage greater than 1) were annotated through the MG-RAST pipeline
+% @ST were these also put through IMG/M?
 resulting in 2,089,779 and 3,460,496 predicted protein coding regions
 in the corn and prairie metagenomes, respectively.  The large majority
 of these regions did not share similarity with any gene in the M5NR
-database, 61.8\% in corn and 70.0\% in prairie.  In total, 613,213 and
-777,454 protein coding regions were assigned to functional categories.
+% @ST what threshold?
+database, 61.8\% in corn and 70.0\% in prairie.  In total, 613,213 (29.3\%) and
+777,454 (22.5\%) protein coding regions were assigned to functional categories.
 The functional profile of these annotated features against SEED
 subsystems were compared (Fig. ~\ref{subsystem}).  For both the corn
-and prairie metagenomes, the most abundant functions were associated
+and prairie metagenomes, the most abundant functions in the assembly were associated
 with the carbohydrate (e.g., central carbohydrate metabolism and sugar
 utilization), amino acids (e.g., biosynthesis and degradation), and
-protein metabolism (e.g., biosynthesis, processing, and modification)
-subsystems.  The subsystem profile of both metagenomes were very
+protein (e.g., biosynthesis, processing, and modification)
+metabolism subsystems.  The subsystem profile of both metagenomes were very
 similar while the taxonomic profile of the metagenomes based on the
 originating taxonomy (phyla) were different (Fig. ~\ref{phyla}, Supp
 Methods).  Within both metagenomes, Proteobacteria were the most
 abundant taxa.  However, in the Iowa corn, Actinobacteria followed by
-Bacterioidetes and Firmucutes were the next most abundant while in the
+Bacterioidetes and Firmicutes were the next most abundant while in the
 Iowa prairie, Acidobacteria were the second most abundant phyla,
 followed by Bacterioidetes and Actinobacteria.  The Iowa prairie also
-had nearly double the fraction of Verruomicrobia compared to the Iowa
+had nearly double the fraction of Verruomicrobia hits compared to the Iowa
 corn.
 
 
@@ -389,18 +396,17 @@ errors) (Supp Fig. 1).  The normalization of sequences also results in
 a more even distribution of coverage (Fig. ~\ref{diginormcoverage}),
 minimizing assembly problems caused by highly variable coverage.
 Additional reduction of the dataset was achieved by the removal of
-high abundance sequences, previously correlated as Illumina sequencing
-artifacts (Howe et al., in preparation).
+high abundance sequences (Howe et al., submitted).
 
-The specific effects of filtering varied depending on differences of
+The specific effects of filtering varied depending on differences between
 reference genomes.  Sequencing coverage and conserved regions among
 references had an impact on filtered assembly recovery.  The filtered
-assemblies of the three plasmids of the \emph{Staphylococcus}
-epidermidis genome (NC\_005008.1, NC\_005007.1, and NC\_005003.1) were
+assemblies of the three plasmids of the \emph{Staphylococcus
+epidermidis} genome (NC\_005008.1, NC\_005007.1, and NC\_005003.1) were
 highly abundant (Supp Table 1) and shared several conserved regions
 (~90\% identity over ~290 bp).  During normalization, repetitive
 elements in these genomes would appear as high coverage elements and
-be removed, evidenced by a large difference in the number of reads
+be removed, as evidenced by a large difference in the number of reads
 associated with NC\_005008.1 in the unfiltered and filtered datasets
 (Supp Fig. 2). Consequently, the unfiltered dataset contained more
 reads spanning these repetitive regions.  This most likely enabled
@@ -410,7 +416,7 @@ unfiltered assemblies. This result, though rare among the mock
 reference genomes, identifies a shortcoming of our approach, and
 indeed for most short-read assembly approaches, related to repetitive
 regions and/or polymorphisms.  For the soil metagenomes, our data
-reduction may cause some information loss which may have been useful
+reduction may cause some information loss which could have been useful
 for assembly, but the benefit of being able to assemble previously
 intractable datasets is obvious.  Evaluation with the mock community
 dataset suggests that this information loss is minimal overall and
@@ -439,12 +445,12 @@ were removed (high abundance sequence filtering) (Howe et al., in preparation).
 As discussed
 above, tthe removal of these sequences (combined with normalization)
 did not significantly alter the recovery of reference genomes through
-de novo assembly and importantly, it enabled the division of the mock
+{\em de novo} assembly and, importantly, it enabled the division of the mock
 community dataset into thousands of disconnected partitions.  The
 resulting assemblies of unpartitioned and partitioned datasets were
-nearly identical.  The large majority of these partitions contained
+nearly identical for the mock data.  The large majority of these partitions contained
 reads from a single reference genome, supporting our previous
-hypothesis that most connected subgraphs contain distinct genomes.  As
+hypothesis that most connected subgraphs contain reads from distinct genomes.  As
 expected, high coverage, well-sampled genomes were found to contain
 fewer partitions (highly connected assembly graph), and low coverage,
 under-sampled genomes contained more partitions (fragmented assembly
@@ -453,7 +459,7 @@ graph).
 To further examine the recovery of sequences through partitioning, one
 or more \emph{E. coli} strains were computationally spiked into the
 mock community dataset.  For a spike of a single \emph{E. coli}
-strain, the fraction of partitions containing \emph{E. Coli}
+strain, the fraction of partitions containing \emph{E. coli}
 associated reads could be reassembled to recover 99\% of the original
 genome (Fig. ~\ref{ecolimap}).  When five closely related strains were
 spiked into the mock dataset, we could recover the large majority of
@@ -478,7 +484,7 @@ assembly at 12 GB and 4 hours to less than 2 GB and 1 hour.  However,
 for the soil metagenomes, previously impossible assemblies could be
 completed in less than a day and in under 14 GB of memory enabling the
 usage of multiple assembly parameters (e.g., k-length) and multiple
-assemblers (Velvet, Soapdenovo, and Meta-idba).
+assemblers (Velvet, SOAPdenovo, and MetaIDBA).
 
 \subsection{Soil assembly}
 The final assemblies of the corn and prairie soil metagenomes resulted
@@ -488,7 +494,7 @@ respectively (equivalent to ~500 \emph{E. coli} genomes).  Without references, t
 assemblies were evaluated based on paired-end concordance.  Overall,
 there is a positively skewed distribution of coverage of all contigs
 from both soil metagenomes, biased towards a coverage of less than
-ten-fold, indicative of the low sequencing overage of these
+ten-fold, indicative of the low sequencing coverage of these
 metagenomes.
 
 %The Iowa corn and prairie assemblies contained 48\% and 31\% of total
@@ -500,12 +506,14 @@ metagenomes.
 %base calls which were supported by 95\% consensus from mapped reads
 %over 90\% over its length (Supp. Fig Polymorphisms corn and prairie).
 
-This study represents the largest soil metagenomic sequencing effort
+This study represents the largest published soil metagenomic sequencing effort
 to date, and these assembly results demonstrate the enormous amount of
 diversity within the soil.  Even with this level of sequencing,
-hundred of thousands of functions were identified for each metagenome.
+hundreds of thousands of functions were identified for each metagenome.
+% @ST defined how? are these data shown?
 More than half of the assembled contigs are not similar to anything in
-known databases suggesting that de novo assembly of novel sequences
+known databases suggesting that {\em de novo} assembly of novel sequences
+% @ST specify ``known databases'' -- you've only looked in one, right?
 holds great benefit for soil metagenomics.  Interestingly, among the
 protein coding sequences which were annotated, comparisons of the two
 soil datasets suggests that the functional profiles are more similar
@@ -513,39 +521,39 @@ to one another than the complementing phylogenetic profiles.  This
 result supports previous hypotheses that despite large diversity with
 two different soil systems, the microbial community provides similar
 function (\cite{Girvan:2005jv,McGradySteed:1997uj,Muller:2002cd,Konstantinidis:2004hr}).
+% @ST ``much as has been observed in human gut communities (not sure of reference) or bioreactors (Hollister 2012).''
 
 \section{Conclusion}
 The key strategies presented here have focused firstly on
 systematically reducing metagenomic data by removing errors and
 sequence redundancy and secondly on the division of the remaining
 dataset informed by its biological connectivity.  Both of these
-approaches required understanding the underlying sequencing datasets
-requiring assembly, specifically the key differences in metagenomes
+approaches required understanding the underlying sequence datasets
+requiring assembly, specifically the key incompatibilities between metagenome
+assembly
 and more traditional genome assembly approaches (e.g., variable
 coverage and diversity).  As the application of metagenomic sequencing
 for environmental studies grows in both volume and breadth, it is
-critical to re-evaluate traditional approaches which have developed
-from the genomic era.  Beyond assembly, approaches for quality
+critical to re-evaluate traditional approaches.  Beyond assembly, approaches for quality
 control, estimating diversity, and statistical determination of signal
 from noise are all areas which need further development for
 metagenomics.  The methods described above allow for easy re-analysis
 of the metagenomes by providing datasets of a tractable size; thus,
 novel developments in assembly approaches (and other analysis such as
-binning or even annotation) can easily be evaluated.  The two
+binning or even annotation) can readily be evaluated.  The two
 metagenomic soil assemblies above provide a glimpse into the
 opportunities that metagenomic sequencing will provide, especially the
 high fraction of unknown proteins identified.  This technology is
 still in its infancy.  Thoughtful analytical approaches, like scalable
-de novo metagenomic assembly, combined with well-chosen experimental
-design and iterative discovery-driven research will accelerate the
-impact of metagenomic studies for scientific advances which will help
-society.
+{\em de novo} metagenomic assembly, combined with well-chosen experimental
+design and iterative discovery-driven research, will magnify the
+impact of metagenomic studies.
 
 \subsection{Assembly Pipeline}
 The entire assembly pipeline for the mock community is described in
 detail in an iPython notebook available for download at \cite{url2,url1}
 accompanied by a web-based tutorial.  Soil assembly was performed with
-the same pipeline and parameter changes are described in Supp Info.
+the same pipeline and parameter changes as described in Supp Info.
 
 \bibliography{assembly-paper}
 
