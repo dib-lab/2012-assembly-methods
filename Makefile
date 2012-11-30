@@ -5,9 +5,11 @@ clean:
 	
 assembly-paper.pdf: assembly-paper.tex
 	pdflatex assembly-paper
+	pdflatex assembly-paper-si
 	bibtex assembly-paper
 	pdflatex assembly-paper
 	pdflatex assembly-paper
+	pdflatex assembly-paper-si
 	pdflatex assembly-paper-si
 
 #e.g. use git show c1275:assembly-paper.tex > OLD-assembly-paper.tex
