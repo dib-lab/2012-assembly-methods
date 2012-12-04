@@ -43,6 +43,15 @@
 \lhead{}\chead{}\rhead{}
 \lfoot{}\cfoot{\thepage}\rfoot{}
 
+%Acknowledgements:  
+%We acknowledge the support of Krystle Chavarria and 
+%Regina Lamendella for extraction of DNA from Great Prairie soil samples
+%and the technical support of Stephanie Malfatti and Tijana Glavina del Rio 
+%at the DOE JGI.  Add Eddy.  I'm not sure in what capacity.
+%Add GLBRC and NSF $ for Adina
+%Add John Johnson & Eric and HPC
+%Add any grants for Titus including Amazon
+
 %%% SECTION TITLE APPEARANCE
 %\usepackage{sectsty} \allsectionsfont{\sffamily\mdseries\upshape} %
 %(See the fntguide.pdf for font help) (This matches ConTeXt defaults)
@@ -182,7 +191,8 @@ lengths in unfiltered and filtered assemblies were also comparable
 
 The abundance of assembled contigs and reference genomes could be
 recovered using the coverage of sequencing reads (Supp Fig. 5).  In
-general, low coverage was observed for most assembled contigs. Above a sequencing coverage of five, the majority of reads
+general, low coverage was observed for most assembled contigs. Above 
+a sequencing coverage of five, the majority of reads
 which could be mapped to reference genomes were likely to be included
 in an assembled contig (Supp. Fig 3 and 4).  Below this threshold,
 reads could be mapped to reference genomes but were less likely to be
@@ -352,13 +362,13 @@ calls which were supported by 95\% consensus from mapped reads over
 %supplementary).
 
 Assembled contigs with their respective bp-coverage (with a median bp
-coverage greater than 1) were annotated through the MG-RAST pipeline
-% @ST were these also put through IMG/M?
+coverage greater than 1) were annotated through the MG-RAST pipeline (
+% @ST were these also put through IMG/M? 
+% @ACI sent these out but am not sure
 resulting in 2,089,779 and 3,460,496 predicted protein coding regions
 in the corn and prairie metagenomes, respectively.  The large majority
-of these regions did not share similarity with any gene in the M5NR
-% @ST what threshold?
-database, 61.8\% in corn and 70.0\% in prairie.  In total, 613,213 (29.3\%) and
+of these regions did not share similarity with any gene in the M5NR 
+database (See Supp. Info Methods), 61.8\% in corn and 70.0\% in prairie.  In total, 613,213 (29.3\%) and
 777,454 (22.5\%) protein coding regions were assigned to functional categories.
 The functional profile of these annotated features against SEED
 subsystems were compared (Fig. ~\ref{subsystem}).  For both the corn
@@ -509,11 +519,14 @@ metagenomes.
 This study represents the largest published soil metagenomic sequencing effort
 to date, and these assembly results demonstrate the enormous amount of
 diversity within the soil.  Even with this level of sequencing,
-hundreds of thousands of functions were identified for each metagenome.
-% @ST defined how? are these data shown?
+hundreds of thousands of functions were annotated for each metagenome.
+% @ST defined how? are these data shown? 
+% @ AC Its above in the Results ".  In total, 613,213 (29.3\%) and
+%777,454 (22.5\%) protein coding regions were assigned to functional categories.
 More than half of the assembled contigs are not similar to anything in
 known databases suggesting that {\em de novo} assembly of novel sequences
 % @ST specify ``known databases'' -- you've only looked in one, right?
+%added M5NR info into Supp info but includes a lot of databases
 holds great benefit for soil metagenomics.  Interestingly, among the
 protein coding sequences which were annotated, comparisons of the two
 soil datasets suggests that the functional profiles are more similar
@@ -522,6 +535,7 @@ result supports previous hypotheses that despite large diversity with
 two different soil systems, the microbial community provides similar
 function (\cite{Girvan:2005jv,McGradySteed:1997uj,Muller:2002cd,Konstantinidis:2004hr}).
 % @ST ``much as has been observed in human gut communities (not sure of reference) or bioreactors (Hollister 2012).''
+% There has been much observed in many environments but I just included soil here to make it a specific habitat point.
 
 \section{Conclusion}
 The key strategies presented here have focused firstly on
