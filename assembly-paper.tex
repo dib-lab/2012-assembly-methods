@@ -201,19 +201,19 @@ assembly-based abundance estimations of references could be evaluated,
 and the estimations based on unfiltered and filtered assemblies
 compared.  The abundance estimations from the filtered assembly were
 significantly closer to predicted abundances from reference genomes
-(p-value of 0.032, see Supp Info).
+(\emph{n}= 28,652; p-value of 0.032, see Supp Info).
 
 \subsubsection{Evaluation of partitioning reads based on connectivity}
 To divide the the remaining dataset, the filtered dataset was
 partitioned based on connectivity within a de Bruijn graph
-representation (previously described in Pell et al. and Howe et al.),
+representation (previously described in \cite{Pell:2012cq, howeartifacts}),
 % @CTB cite.
 and each partition was assembled independently.  The resulting
 assemblies of filtered, unpartitioned and filtered, partitioned
 datasets were compared and found to be greater than 99\% identical.
 For the mock dataset, a total of 85,818 disconnected partitions (a
 total of 9 million reads) containing a minimum of five reads were
-identified (Fig. ~\ref{ecolimap}).  Among these, only 2,359 partitions
+identified (Supp. Fig. 6).  Among these, only 2,359 partitions
 contained reads originating from more than one genome, indicating that
 partitioning properly separated reads from distinct species.
 
@@ -247,7 +247,7 @@ containing reads from multiple genomes.  A total of 424 partitions
 contained reads from the spiked \emph{E. coli} genome (201 partitions
 contained \emph{only} spiked reads) and when assembled aligned with
 99.5\% of \emph{E. coli} strain E24377A genome (4,957,067 of 4,979,619
-bp) (Fig. ~\ref{ecolimap}).  Next, the same analysis was performed on
+bp) (Supp. Fig. 6).  Next, the same analysis was performed on
 the mock dataset after introducing five closely-related \emph{E. coli}
 strains into the mock community dataset.  Partitioning this
 ``mix-spiked" mock community dataset resulted in 81,425 partitions, of
@@ -258,7 +258,7 @@ the spiked \emph{E. coli} strains.  In partitions containing greater
 than one genome, 224 partitions contained reads from a spiked
 \emph{E. coli} strain and one other reference genome (either another
 spiked strain or from the mock community dataset)
-(Fig. ~\ref{ecolimap2}).  The partitions containing reads originating
+(Supp. Fig. 7).  The partitions containing reads originating
 from the spiked \emph{E. coli} strains were identified and assembled
 independently.  Among the resulting 6,076 contigs, all but three
 contigs could be identified as originating from a spiked
@@ -268,7 +268,7 @@ contigs were greater than 99\% similar to HMP mock reference genomes
 associated with \emph{E. coli} were aligned against the spiked
 reference genomes, recovering greater than 98\% of each of the five
 genomes.  Many of these contigs were associated with reads originating
-from multiple genomes (Supp Fig. 6), 3,075
+from multiple genomes (Supp Fig. 8), 3,075
 contigs (51\%) could be aligned to reads which originated from more
 than one spiked genome.  This result is comparable to the fraction of
 contigs which are associated with multiple genomes when the unfiltered
@@ -283,7 +283,7 @@ metagenomes.  Iowa corn and prairie
 datasets (containing 1.8 billion and 3.3 billion reads, respectively)
 were could not be assembled with readily available hardware (500 GB of RAM).
 A 75 million reads subset of the Iowa corn dataset alone required
-110 GB of memory (Supp Fig. 7).  Applying the same
+110 GB of memory (Supp. Fig. 9).  Applying the same
 filtering approaches as described above, the Iowa corn and prairie
 datasets were reduced to 1.4 billion and 2.2 billion reads,
 respectively, and after partitioning, a total of 1.0 billion and 1.7
@@ -342,7 +342,7 @@ identifying the amount of consensus obtained by reads mapped
 (Supp. Info methods).  For both the Iowa corn and prairie metagenomes,
 nearly all assembled sequences (greater than 99.9\%) contained base
 calls which were supported by 95\% consensus from mapped reads over
-90\% over its length (Supp. Fig Polymorphisms corn and prairie).
+90\% over its length (Supp. Fig. 10).
 
 %For the filtered datasets, the time and memory requirements for de
 %novo assembly were significantly reduced.  The filtering took less
@@ -406,7 +406,7 @@ errors) (Supp Fig. 1).  The normalization of sequences also results in
 a more even distribution of coverage (Fig. ~\ref{diginormcoverage}),
 minimizing assembly problems caused by highly variable coverage.
 Additional reduction of the dataset was achieved by the removal of
-high abundance sequences (Howe et al., submitted).
+high abundance sequences \cite{howeartifacts}.
 
 The specific effects of filtering varied depending on differences between
 reference genomes.  Sequencing coverage and conserved regions among
@@ -471,10 +471,10 @@ or more \emph{E. coli} strains were computationally spiked into the
 mock community dataset.  For a spike of a single \emph{E. coli}
 strain, the fraction of partitions containing \emph{E. coli}
 associated reads could be reassembled to recover 99\% of the original
-genome (Fig. ~\ref{ecolimap}).  When five closely related strains were
+genome (Supp. Fig. 6).  When five closely related strains were
 spiked into the mock dataset, we could recover the large majority of
 the genomic content of these strains but largely in chimeric contigs
-(Supp Fig. 6).  This result is not unexpected
+(Supp Fig. 8).  This result is not unexpected
 nor unique to our approach as assemblies of the unfiltered dataset
 resulted in a slightly higher fraction of assembled contigs associated
 with multiple references.  Overall, closely related sequences which
@@ -660,27 +660,6 @@ PE aligned $>$ 1 time	&1,993,902	 & 3,133,710\\
 
 \pagebreak
 \section{Figures}
-
-\begin{figure}[ht]
-\center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{./figures/singleecoli-pie.pdf}}
-\caption{The fraction of partitions in spiked HMP dataset (single
-  \emph{E. Coli}) which contain single genomes (blue) and multiple
-  genomes (green).  The exploded pie chart section indicates
-  partitions which contain spiked \emph{E. coli} reads which were
-  subsequently assembled independently.}
-\label{ecolimap}
-\end{figure}
-
-\begin{figure}[ht]
-\center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{./figures/multipleecoli-pie.pdf}}
-\caption{The fraction of partitions in spiked HMP dataset (five
-  \emph{E. Colis}) which contain single genomes (blue) and multiple
-  genomes (green).  The exploded pie chart section indicates
-  partitions which contain spiked \emph{E. coli} reads which were
-  subsequently assembled independently. }
-\label{ecolimap2}
-\end{figure}
-
 
 \begin{figure}[ht]
 \center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]
