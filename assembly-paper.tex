@@ -99,7 +99,7 @@ with an estimated 50 Tbp needed for an individual gram of soil
 \cite{Gans:2005p1365}.  Both the short read lengths and large volume
 of sequencing data pose new challenges to sequence analysis
 approaches.  A single metagenomic project can readily generate as much
-or more data is in global reference databases; for example, a
+or more data than is in global reference databases; for example, a
 human-gut metagenome sample containing 578 Gbp \cite{Qin:2010p189}
 produced more than double the total content of the 202 Gbp NCBI RefSeq
 database (Release 56).  Moreover, short reads contain only minimal
@@ -132,9 +132,9 @@ are limited in terms of the sample sizes they can assemble.
 Here, we combine two approaches, digital normalization and
 partitioning, to enable large-scale metagenomic {\em de novo}
 assembly.  Digital normalization reduces the dataset size by
-discarding reads from high-coverage regions \cite{XXX}.  Subsequently,
+discarding reads from high-coverage regions \cite{browndiginorm}.  Subsequently,
 partitioning separates reads based on transitive connectivity,
-resulting in easily assembled subsets of reads \cite{XXX}.  We
+resulting in easily assembled subsets of reads \cite{howeartifacts,Pell:2012cq}.  We
 evaluate these approaches by comparing unfiltered and filtered
 assemblies of a human gut mock community dataset, and find that these
 filtering methods result in assemblies nearly identical to assemblies
@@ -171,7 +171,7 @@ reads covered 91\% of the reference genomes
 
 We next compared the recovery of reference genomes with the contigs
 assembled from the original and filtered datasets.  Using the Velvet
-assembler we recovered 43\% and 44\% of references, respectively.  The
+assembler, we recovered 43\% and 44\% of references, respectively.  The
 assembly of the original dataset contained 29,063 contigs and 38
 million bp, while the filtered assembly contained 30,082 contigs and
 35 million bp (Table ~\ref{assembly-summary}).  Comparable recoveries
@@ -182,7 +182,7 @@ genomic content.  For the highest abundance genomes
 (ref\textbar{}NC\_005008.1, ref\textbar{}NC\_005007.1, and
 ref\textbar{}NC\_005003.1), the unfiltered assembly recovered
 significantly more of the original genomes; however, for the large
-majority of genomes the filtered assembly recovered similar (and
+majority of genomes, the filtered assembly recovered similar (and
 sometimes greater) amounts of the reference genomes (Supp. Fig. 2 and
 3).  The distribution of contig lengths in unfiltered and filtered
 assemblies were also comparable (Supp. Fig. 4).
@@ -197,7 +197,7 @@ contigs.  We next compared the abundances of the reference genomes to
 the abundances of the contigs in the unfiltered and filtered
 assemblies.  The abundance estimations from the filtered assembly were
 significantly closer to predicted abundances from reference genomes
-(\emph{n}= 28,652; p-value of 0.032, see Supp Info).
+(\emph{n} = 28,652; p-value = 0.032, see Supp. Info).
 
 \subsubsection{Evaluation of partitioning reads based on connectivity}
 
@@ -303,7 +303,7 @@ total 31,537,798 and 55,993,006 partitions (containing more than five
 reads) in the corn and prairie datasets, respectively.  For assembly,
 we grouped partitions together into files containing 10 million reads.
 Once partitioned, each group of reads could be assembled in less than
-14 GB and 4 hours.  This readily enabled the evaluation of multiple
+14 GB and 4 hours.  This readily enabled the usage of multiple
 assemblers and assembly parameters.
 
 The final assembly of the corn and prairie soil metagenomes resulted
@@ -315,13 +315,13 @@ aligned to assembled contigs.  Overall, for the Iowa corn assembly,
 8\% of single reads and 10\% of paired end reads mapped to the
 assembly.  Among the paired end reads, 95.5\% of the reads aligned
 concordantly.  In the Iowa prairie assembly, 10\% of the single reads
-and 11\% of the paired end reads aligned to the assmebled contigs, and
+and 11\% of the paired end reads aligned to the assembled contigs, and
 95.4\% of the paired ends aligned concordantly (Table
 ~\ref{read-map}).  Based on these mappings, we calculated read
 coverage of assembled contigs within the soil metagenomes
 (Fig. ~\ref{soilassemblycoverage}).  Overall, there is a positively
 skewed distribution of coverage of all contigs from both soil
-metagenomes, biased towards a coverage of less than ten-fold.  48\%
+metagenomes, biased towards a coverage of less than ten-fold, and 48\%
 and 31\% of total contigs in Iowa corn and prairie assemblies
 respectively had a median basepair coverage less than 10.
 
