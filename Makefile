@@ -5,8 +5,13 @@ clean:
 	
 assembly-paper.pdf: assembly-paper.tex
 	pdflatex assembly-paper
+	pdflatex assembly-paper
+	pdflatex assembly-paper-si
 	pdflatex assembly-paper-si
 	bibtex assembly-paper
+	bibtex assembly-paper
+	bibtex assembly-paper-si
+	bibtex assembly-paper-si
 	pdflatex assembly-paper
 	pdflatex assembly-paper
 	pdflatex assembly-paper-si
