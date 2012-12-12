@@ -83,7 +83,7 @@
 \author{Adina Chuang Howe$^{1,2}$, 
 Janet Jansson$^{3,4}$,
 Stephanie A. Malfatti$^{3}$,
-Susannah Tringe$^{3}$,
+Susannah G. Tringe$^{3}$,
 James M. Tiedje$^{1,2}$, and 
 C. Titus Brown$^{1,5\ast}$}
 
@@ -664,7 +664,7 @@ PE aligned $>$ 1 time	&1,993,902	 & 3,133,710\\
 
 \begin{figure}[ht]
 \center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]
-{./figures/mockdiginormhist.pdf}}
+{./figures/fig1-hmpassemblyhist.pdf}}
 \caption{K-mer coverage of HMP mock community dataset before and
   after filtering approaches.}
 \label{kmercoverage}
@@ -674,7 +674,7 @@ PE aligned $>$ 1 time	&1,993,902	 & 3,133,710\\
 
 \begin{figure}[ht]
 \center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]
-{./figures/soildiginorm.pdf}}
+{./figures/fig2-diginormhist.pdf}}
 \caption{K-mer coverage of Iowa corn and prairie metagenomes before
   and after filtering approaches.}
 \label{diginormcoverage}
@@ -684,9 +684,9 @@ PE aligned $>$ 1 time	&1,993,902	 & 3,133,710\\
 
 \begin{figure}[ht]
 \center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]
-  {./figures/assembly-coverage.pdf}}
+  {./figures/fig3-coverage.pdf}}
 \caption{Coverage (median basepair) distribution of assembled contigs
-  from soil metagenomes.}
+  from Iowa corn soil (top) and Iowa prairie soil (bottom) metagenomes.}
 \label{soilassemblycoverage}
 \end{figure}
 
@@ -694,7 +694,7 @@ PE aligned $>$ 1 time	&1,993,902	 & 3,133,710\\
 
 \begin{figure}[ht]
 \center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]
-  {./figures/phyla.pdf}}
+  {./figures/fig4-phyla.pdf}}
 \caption{Phylogenetic distribution from SEED subsystem annotations for
   Iowa corn and prairie metagenomes.}
 \label{phyla}
@@ -704,7 +704,7 @@ PE aligned $>$ 1 time	&1,993,902	 & 3,133,710\\
 
 \begin{figure}[ht]
 \center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]
-  {./figures/subsystems.pdf}}
+  {./figures/fig5-subsystems.pdf}}
 \caption{Functional distribution from SEED subsystem annotations for
   Iowa corn and prairie metagenomes.}
 \label{subsystem}
@@ -743,14 +743,19 @@ and
 \emph{http://nbviewer.ipython.org/urls/raw.github.com/ngs-docs/ngs-notebooks/
 master/ngs-71-hmp-diginorm.ipynb}.  Soil assembly was performed with
 the same pipeline and parameter changes as described in Supplementary Information.
+The annotated metagenome for Iowa corn can be found at
+\emph{http://metagenomics.anl.gov/linkin.cgi?metagenome=4504797.3} and 
+Iowa prairie at \emph{http://metagenomics.anl.gov/linkin.cgi?metagenome=4504798.3}.
 
 \section*{Statistical Methods}
 The reference-based abundance (from reads mapped to reference genomes)
 and assembly-based abundance (from reads mapped to contigs) of genomes
 were compared.  Using a one-directional, paired t-test of squared
 deviations, the abundance estimates of the unfiltered and filtered
-assemblies were compared.  We expected the filtered assembly to have
-increased accuracy due to a reduction of errors (e.g. normalization
+assemblies were compared.  The mean and standard deviation of 
+the abundances of unfiltered contigs, filtered contigs, and reference genes
+were 6.8 +/- 7.1, 8.1 +/- 7.7, and 7.8 +/- 5.2, respectively.  We expected the 
+filtered assembly to have increased accuracy due to a reduction of errors (e.g. normalization
 and high abundance filtering) and used a one-sided t-test which
 indicated that abundance estimations from the filtered assembly were
 significantly closer to predicted abundances from reference genomes
