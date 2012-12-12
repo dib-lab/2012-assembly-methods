@@ -31,3 +31,6 @@ diff:
 	bibtex DIFF-assebly-paper-si
 	pdflatex DIFF-assembly-paper-si
 	pdflatex DIFF-assembly-paper-si
+
+arxiv:
+	tar czf assembly-paper.tar.gz assembly-paper.tex assembly-paper.bbl nature.cls assembly-coverage.pdf mockdiginormhist.pdf phyla.pdf soildiginorm.pdf subsystems.pdf flowchart.pdf
