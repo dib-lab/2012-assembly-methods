@@ -5,7 +5,6 @@
 % class.  See "book", "report", "letter" for other types of document.
 
 \documentclass[11pt]{article} % use larger type; default would be 10pt
-
 %\usepackage[utf8]{inputenc} % set input encoding (not needed with
 %XeLaTeX)
 
@@ -69,13 +68,20 @@
 \doublespacing
 \usepackage[english]{babel}
 \bibliographystyle{naturemag}
+\renewcommand{\figurename}{Supplementary Figure}
+\renewcommand{\tablename}{Supplementary Table}
+
+\title{Supplementary Information:  Approaches for Large Scale Metagenome Assembly}
+%\centering\author{Adina Chuang Howe$^{1,2}$, 
+%Janet Jansson$^{3,4}$,
+%Stephanie A. Malfatti$^{3}$,
+%Susannah G. Tringe$^{3}$,
+%James M. Tiedje$^{1,2}$, and 
+%C. Titus Brown$^{1,5\ast}$}
+
 \begin{document}
-
-\title{SI:  Approaches for Large Scale Metagenome Assembly}
-\author{ACH, JMT, CTB}
 \maketitle
-
-\subsubsection{Summary of approaches used on mock community dataset}
+\section*{Summary of approaches used on mock community dataset}
 
 The HMP mock community dataset and its available draft reference
 genomes were used to evaluate our approaches towards data reduction
@@ -93,9 +99,9 @@ disconnected sets of reads resulting in a total of 85,818 partitions
 containing greater than five reads (summarized in
 Table 1).
 
-\section{Methods}
+\section*{Supplementary Methods}
 
-\subsection{Datasets}
+\subsection*{Datasets}
 In this study, we examined two large soil metagenomes generated from
 soils collected from Iowa corn and native prairie soils.  Sequencing
 was performed at the DOE Joint Genome Institute (Walnut Creek, CA).
@@ -116,14 +122,14 @@ metagenomes.  We computationally generated 100 bp reads from each
 reference genome to a coverage of 10x and with a 2\% error rate and
 subsequently randomly shuffled these reads with select datasets.
 
-\subsubsection{Estimation of assembly requirements for soil metagenomes}
+\subsubsection*{Estimation of assembly requirements for soil metagenomes}
 Subsets of the Iowa corn metagenome were assembled with the Velvet
 assembler (v1.2.07) with the following parameters: velveth K=45,
 -short and velvetg -exp\_cov auto -cov\_cutoff auto, -scaffolding no.
 The time and memory for each assembly was estimated up to a maximum of
 150 hours and 100 GB.
 
-\subsubsection{Digital normalization}
+\subsubsection*{Digital normalization}
 Digital normalization was previously describe in \cite{browndiginorm}.  
 For the mock
 community dataset, digital normalization was performed with the
@@ -133,7 +139,7 @@ as follows: K=20, coverage=20, and Bloom filter size = 48 GB x 4.
 Similar parameters were used for the Iowa prairie metagenome, with the
 exception that the Bloom filter size was 60 GB x 4.
 
-\subsubsection{Removal of high abundance sequences}
+\subsubsection*{Removal of high abundance sequences}
 To eliminate known sequencing artifacts in Illumina metagenomes
 (previously described in Howe et al., in preparation), high abundance 
 sequences (coverage
@@ -142,7 +148,7 @@ used for digital normalization.  For the relatively high coverage mock
 community dataset, filtered reads were subsequently normalized to a
 coverage of 10 (K=20, bloom filter size = 1 GB x 4).
 
-\subsubsection{Partitioning and \emph{de novo} assembly of disconnected reads}
+\subsubsection*{Partitioning and \emph{de novo} assembly of disconnected reads}
 Normalized and filtered datasets were loaded into a probabilistic
 representation of the assembly graph as described in \cite{Pell:2012cq}, and
 disconnected partitions of the resulting graph were separated.
@@ -155,7 +161,7 @@ dereplicated with CD-HIT (\cite{Fu:2012jk}, 99\% similarity) and merged with
 Minimus2 \cite{Sommer:2007p1253}.
 
 
-\subsection{Comparing coverage of reference genomes by reads}
+\subsection*{Comparing coverage of reference genomes by reads}
 Reads in the HMP mock unfiltered and filtered datasets were mapped
 back to originating genomes using default settings in Bowtie2
 \cite{bowtie}.  For cases where reads could be mapped back to multiple
@@ -164,7 +170,7 @@ each read.  Sequencing coverage was estimated for the whole genome as
 the median base pair coverage for all base pairs in the reference
 genome.
 
-\subsection{Read coverage by assemblies}
+\subsection*{Read coverage by assemblies}
 All quality trimmed reads for Iowa corn and prairie were aligned with
 assembled contigs (length greater than 300 bp) using default
 parameters in Bowtie2 \cite{bowtie}.  Paired end reads were evaluated according to
@@ -179,21 +185,18 @@ fraction of positions with greater than 95\% base consensus was
 calculated to estimate the presence of polymorphisms within the
 assembled contig.
 
-\subsection {Annotation of assemblies}
+\subsection*{Annotation of assemblies}
 Assembled contigs and their corresponding median bp coverage for the
 Iowa corn and prairie metagenomes were upload into MG-RAST annotation
 pipeline \cite{Meyer:2008db} and are available on MG-RAST as 4504979.3 (Iowa corn)
 and 4504798.3 (Iowa Prairie).  The resulting MG-RAST blat annotations
 were compared to the M5NR database using a maximum e-value of 1e-5, a
-minimum identity of 60\%, and a minimum alignment length of 15 aa.  The M5NR is an 
-integration of numerous databases including protein annotations from GenBank, IMG, 
-KEGG, PATRIC, RefSeq, SEED, SwissProt, and TrEMBL and ontology annotations from 
-eggNOG, COG, GO, KO, NOG, and SEED subsystems. Both the phylogenetic 
-distribution of bacteria (phyla) and functional
-distribution of subsystems were compared between the Iowa and corn
+minimum identity of 60\%, and a minimum alignment length of 15 aa .
+Both the phylogenetic distribution of bacteria (phyla) and functional
+distibution of subsystems were compared between the Iowa and corn
 metagenomes.
   
-\subsection{Comparing assemblies}
+\subsection*{Comparing assemblies}
 Resulting assemblies (contigs greater than 300 bp) were compared using
 the total number of contigs, assembly length, and maximum contig size
 for each assembly.  Assemblies were also aligned to each other using
@@ -209,9 +212,19 @@ contigs (greater than 300 bp) from the unfiltered and filtered
 alignment (requiring E-value cutoff of 1e-5).  Contigs were associated
 with reference genomes through an identical alignment approach.
 
+The reference-based abundance (from reads mapped to reference genomes)
+and assembly-based abundance (from reads mapped to contigs) of genomes
+were compared.  Using a one-directional, paired t-test of squared
+deviations, the abundance estimates of the unfiltered and filtered
+assemblies were compared.  We expected the filtered assembly to have
+increased accuracy due to a reduction of errors (e.g. normalization
+and high abundance filtering) and used a one-sided t-test which
+indicated that abundance estimations from the filtered assembly were
+significantly closer to predicted abundances from reference genomes
+(p-value of 0.032).
 
 Annotations against the M5NR database were obtained through the
-MG-RAST annotation pipeline (maximum E-value 1e-5, minimum identity 60\%, minimum alignment length 15 aa). The phylogenetic and functional
+MG-RAST annotation pipeline.  The phylogenetic and functional
 distribution of SEED subsystems between the Iowa corn and prairie
 metagenome were compared (Fig. 6 and 7).  For each subsystem, the
 relative abundance of each subsystem was calculated and the ratio of
@@ -244,11 +257,12 @@ functional distribution of SEED annotations, this value was 0.35 +/-
 %subsequently used these two genes to estimate genome abundance within
 %Iowa corn and prairie metagenomes.
 
-\section{Supp. References}
-\bibliography{assembly-paper}
 
-\section{Figures and Tables}
+\section*{Supplementary Tables}
 
+\clearpage
+\renewcommand{\figurename}{Supplementary Figure}
+\renewcommand{\tablename}{Supplementary Table}
 \begin{landscape}
 \begin{table}
 \caption{HMP mock dataset reference genomes estimated sequencing depth
@@ -326,18 +340,21 @@ gi\textbar{}77358697\textbar{}ref\textbar{}NC\_003112.2\textbar{} & 4
 \end{table}
 \end{landscape}
 
-\begin{table}[ht]
-\caption{Number of housekeeping genes identified in HMP mock community
-  reference genomes and assembled (Velvet) contigs.}
-\begin{tabular}{l c c}
-Gene model & Counts in ref genomes & Counts in assembled contigs \\
-\hline
-gyrB & 21 & 55 \\
-recA & 22 & 19 \\
-rplB & 18 & 18 \\
-rpoB & 18 & 84 \\
-\end{tabular}
-\end{table}
+%\begin{table}[ht]
+%\caption{Number of housekeeping genes identified in HMP mock community
+%  reference genomes and assembled (Velvet) contigs.}
+%\begin{tabular}{l c c}
+%Gene model & Counts in ref genomes & Counts in assembled contigs \\
+%\hline
+%gyrB & 21 & 55 \\
+%recA & 22 & 19 \\
+%rplB & 18 & 18 \\
+%rpoB & 18 & 84 \\
+%\end{tabular}
+%\end{table}
+
+\clearpage
+\section*{Supplementary Figures}
 
 \begin{figure}[ht]
 \center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]
@@ -382,26 +399,6 @@ rpoB & 18 & 84 \\
 \end{figure}
 
 \begin{figure}[ht]
-\center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{./figures/singleecoli-pie.pdf}}
-\caption{The fraction of partitions in spiked HMP dataset (single
-  \emph{E. Coli}) which contain single genomes (blue) and multiple
-  genomes (green).  The exploded pie chart section indicates
-  partitions which contain spiked \emph{E. coli} reads which were
-  subsequently assembled independently.}
-\label{ecolimap}
-\end{figure}
-
-\begin{figure}[ht]
-\center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{./figures/multipleecoli-pie.pdf}}
-\caption{The fraction of partitions in spiked HMP dataset (five
-  \emph{E. Colis}) which contain single genomes (blue) and multiple
-  genomes (green).  The exploded pie chart section indicates
-  partitions which contain spiked \emph{E. coli} reads which were
-  subsequently assembled independently. }
-\label{ecolimap2}
-\end{figure}
-
-\begin{figure}[ht]
 \center{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{./figures/ecoli-multi-genomes.pdf}}
 \caption{The fraction of assembled contigs assembled from partitions
   containing spiked \emph{E. coli} reads associated with 0 to five of
@@ -432,6 +429,11 @@ rpoB & 18 & 84 \\
   Iowa prairie metagenome.}
 \label{prairie-poly}
 \end{figure}
+
+\clearpage
+
+\section*{Supplementary References}
+\bibliography{assembly-paper}
 
 \end{document}
 
