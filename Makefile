@@ -28,9 +28,12 @@ diff:
 	
 	latexdiff-so OLD-assembly-paper-si.tex assembly-paper-si.tex > DIFF-assembly-paper-si.tex
 	pdflatex DIFF-assembly-paper-si
-	bibtex DIFF-assebly-paper-si
+	bibtex DIFF-assembly-paper-si
 	pdflatex DIFF-assembly-paper-si
 	pdflatex DIFF-assembly-paper-si
 
 arxiv:
-	tar czf assembly-paper.tar.gz assembly-paper.tex assembly-paper.bbl nature.cls assembly-coverage.pdf mockdiginormhist.pdf phyla.pdf soildiginorm.pdf subsystems.pdf flowchart.pdf
+	tar czf assembly-paper.tar.gz assembly-paper.tex assembly-paper.bbl nature.cls fig*.pdf flowchart.pdf
+
+arxiv-si:
+	tar czf assembly-paper-si.tar.gz assembly-paper-si.tex assembly-paper-si.bbl nature.cls coverage.pdf coverage1.pdf coverage2.pdf contig-lengths.pdf ref_gi32470572.pdf ecoli-multi-genomes.pdf memory.pdf corn.pdf prairie.pdf
