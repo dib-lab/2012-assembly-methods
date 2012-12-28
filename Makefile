@@ -28,6 +28,6 @@ diff:
 	
 	latexdiff-so OLD-assembly-paper-si.tex assembly-paper-si.tex > DIFF-assembly-paper-si.tex
 	pdflatex DIFF-assembly-paper-si
-	bibtex DIFF-assebly-paper-si
+	bibtex DIFF-assembly-paper-si
 	pdflatex DIFF-assembly-paper-si
 	pdflatex DIFF-assembly-paper-si
