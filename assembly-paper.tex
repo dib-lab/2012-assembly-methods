@@ -112,7 +112,8 @@ then assemble two large soil metagenomes from matched Iowa corn and
 native prairie soils.  The predicted functional content and phylogenetic
 origin of the assembled contigs indicate significant taxonomic
 differences despite similar function.  The assembly strategies
-presented are generic and can be extended to any metagenome; full
+presented are generic and can be extended to any metagenome and any
+assembler; full
 source code is freely available under a BSD
 license.
 \end{abstract}
@@ -147,38 +148,44 @@ homology analysis \cite{Arumugam:2011p735,Qin:2010p189}.
 \emph{De novo} assembly of raw sequence data offers several advantages
 over analyzing the sequences directly.  Assembly removes most random
 sequencing errors and decreases the total amount of data to be
-analyzed.  These resulting assembled contigs are longer than
-sequencing reads and provide gene order.  Importantly, \emph{de novo}
-assembly does not rely on the existence of reference genomes, thus
-allowing for the discovery of novel genomic elements.  The main challenge for
-metagenomic applications of \emph{de novo} assembly is that current
-assembly tools do not scale to the high diversity and large volume of metagenomic data: metagenomes from rumen, human gut, and permafrost
-soil sequencing could only be assembled by discarding low abundance
+analyzed, yielding assembled contigs longer and more specific than
+sequencing reads.  Importantly, \emph{de novo} assembly does not rely
+on the existence of reference genomes, thus allowing for the discovery
+of novel genomic elements.  The main challenge for metagenomic
+applications of \emph{de novo} assembly is that current assembly tools
+do not scale to the high diversity and large volume of metagenomic
+data: metagenomes from rumen, human gut, and permafrost soil
+sequencing could only be assembled by discarding low abundance
 sequences prior to assembly
-\cite{Hess:2011p686,Mackelprang:2011p1087,Qin:2010p189}.  Traditional
-assemblers are designed for single genomes whose abundance
-distribution and diversity content are typically simpler than
-community metagenomes.  Although many metagenome-specific assemblers
-have recently been developed for community assembly, most of these assemblers
-do not scale to extremely large samples \cite{Scholz:2012p1372}.
+\cite{Hess:2011p686,Mackelprang:2011p1087,Qin:2010p189}.  Although
+many metagenome-specific assemblers have recently been developed for
+community assembly, they cannot work with the volume of reads
+necessary to achieve high coverage for extremely diverse environmental
+metagenomes \cite{Scholz:2012p1372}.
 
-Here, we combine two approaches, digital normalization and
-partitioning, to tackle the problem of {\em de novo} metagenome
-assembly.  Digital normalization normalizes sequence coverage and
-reduces the dataset size by discarding reads from high-coverage
-regions \cite{browndiginorm}.  Subsequently, partitioning separates
-reads based on transitive connectivity, resulting in easily assembled
-subsets of reads \cite{howeartifacts,Pell:2012cq}.  We evaluate these
-approaches by applying them to a human gut mock community dataset, and
-find that these filtering methods result in assemblies nearly
-identical to assemblies from the unprocessed dataset.  Next, we apply
-these approaches to the assembly of metagenomes from two matched soils,
-100-year cultivated Iowa agricultural soil and native Iowa
-prairie.  We compare the predicted functional capacities and
-phylogenetic origins of the assembled contigs and conclude that
-despite significant phylogenetic differences, the functions encoded in
-both soil data sets are similar.  We also show that virtually no
-strain-level heterogeneity is detectable within the assembled reads.
+Here, we present two pre-assembly read filtering strategies, digital
+normalization and partitioning, that provide a general strategy for
+scaling and improving metagenome assembly.  Digital normalization
+normalizes sequence coverage and reduces the dataset size by
+discarding reads from high-coverage regions \cite{browndiginorm}.
+Subsequently, partitioning separates reads based on transitive
+connectivity, resulting in easily assembled subsets of reads
+\cite{howeartifacts,Pell:2012cq}.  We evaluate these approaches by
+applying them to a human gut mock community dataset, and find that
+these filtering methods result in assemblies nearly identical to
+assemblies from the unprocessed dataset.  Moreover, we show that
+partitioning separates most reads into species-level bins, providing
+an alternative to abundance-based and k-mer approaches to species
+clustering.
+
+We next apply these approaches to the assembly of previously
+intractable metagenomes from two matched soils, 100-year cultivated
+Iowa agricultural soil and native Iowa prairie. We compare the
+predicted functional capacities and phylogenetic origins of the
+assembled contigs and conclude that despite significant phylogenetic
+differences, the functions encoded in both soil data sets are similar.
+We also show that virtually no strain-level heterogeneity is
+detectable within the assembled reads.
 
 \section*{Results}
 
@@ -507,24 +514,23 @@ overall function \cite{Girvan:2005jv,McGradySteed:1997uj,Muller:2002cd,Konstanti
 
 We present two strategies that readily enable the assembly of very
 large environmental metagenomes by discarding redundancy and
-subdividing the data prior to assembly.  These strategies are generic and should
-be applicable to any metagenome.  We demonstrate their effectiveness by
+subdividing the data prior to assembly.  The strategies are generic and applicable to any metagenome.  We demonstrate their effectiveness by
 first evaluating them on the assembly of a mock community metagenome,
 and then applying them to two previously intractable soil metagenomes.
-
 Partitioning is an especially valuable approach because it enables the
-extraction of read subsets that should assemble together.  These read
+extraction of read subsets that belong to individual species.  These read
 partitions are small enough that a variety of assembly, abundance
 analysis, and polymorphism analysis techniques can be easily applied
 to them individually.
 
-The two soil assemblies also provide a deeper glimpse of the
-opportunities and challenges of large scale environmental metagenomics
-in high-diversity systems such as soil: we identified millions of
-novel putative proteins, most of unknown function.
-
-
-
+These strategies filter and partition reads prior to assembly and can
+work with any assembler, considerably reducing the computational
+resources needed to complete an assembly. By acting as pre-filters,
+digital normalization and partitioning let downstream assemblers
+focus on improving their performance on low-coverage or high
+variability data without a strong consideration for computational
+resources.  This should enable significant improvement of metagenome
+assembly techniques going forward.
 
 \begin{addendum}
 \item This project was supported by Agriculture and Food Research Initiative
